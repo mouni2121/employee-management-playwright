@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "Preserve",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": ["node"]
+  },
+  "include": [
+    "Builders/**/*.ts",
+    "Components/**/*.ts",
+    "Fixtures/**/*.ts",
+    "Pages/**/*.ts",
+    "Types/**/*.ts",
+    "tests/**/*.ts",
+    "playwright.config.ts"
+  ]
+}
