@@ -12,8 +12,16 @@ test.describe('Employee management', () => {
         employeeHubPage,
         createdEmployees,
     }) => {
-        const employee1 = new EmployeeBuilder().build()
-        const employee2 = new EmployeeBuilder().build()
+        const employee1 = new EmployeeBuilder()
+                          .withPhoneNumber('07777777777')
+                          .withStartDate('01/01/2025')
+                          .withJobTitle('Senior Manager')
+                          .build()
+        const employee2 = new EmployeeBuilder()
+                          .withPhoneNumber('07777777787')
+                          .withStartDate('01/01/2026')
+                          .withJobTitle('Senior QA')
+                          .build()
         createdEmployees.push(employee1, employee2)
 
         await test.step('Create the first employee', async () => {
