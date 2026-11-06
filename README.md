@@ -10,11 +10,14 @@ Playwright end-to-end tests for the BrightHR sandbox, written in TypeScript. The
 
 ## Setup
 
-Install dependencies:
+Clone the repository and navigate to the project directory.
 
-```bash
-npm ci
-npx playwright install chromium
+Install all project dependencies, Chromium, and the required browser dependencies with:
+```
+npm run setup
+
+```
+The setup command runs the required npm and Playwright installation steps so the project can be prepared on a new machine with a single command.
 ```
 
 Create a local `.env` file from the example:
